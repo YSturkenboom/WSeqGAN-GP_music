@@ -78,7 +78,7 @@ class Discriminator(object):
 
         # Keeping track of l2 regularization loss (optional)
         l2_loss = tf.constant(0.0)
-        
+
         with tf.variable_scope('discriminator'):
 
             # Embedding layer
@@ -113,7 +113,7 @@ class Discriminator(object):
                         padding='VALID',
                         name="pool")
                     pooled_outputs.append(pooled)
-            
+
             # Combine all the pooled features
             num_filters_total = sum(num_filters)
             self.h_pool = tf.concat(pooled_outputs, 3)
@@ -141,6 +141,20 @@ class Discriminator(object):
 
                 self.wasserstein_loss = -(tf.reduce_mean(self.scores_real) - tf.reduce_mean(self.scores_fake))
 
+
+                # Gradient penalty
+                alpha = tf.random_uniform(
+                    shape=[BATCH_SIZE,1],
+                    minval=0.,
+                    maxval=1.
+                )
+                
+                differences = fake_data - real_data
+                interpolates = real_data + (alpha*differences)
+                gradients = tf.gradients(Discriminator(interpolates), [interpolates])[0]
+                slopes = tf.sqrt(tf.reduce_sum(tf.square(gradients), reduction_indices=[1]))
+                gradient_penalty = tf.reduce_mean((slopes-1.)**2)
+                    disc_cost += LAMBDA*gradient_penalty
 
                 #self.ypred_for_auc = tf.nn.softmax(self.scores)
                 #self.predictions = tf.argmax(self.scores, 1, name="predictions")

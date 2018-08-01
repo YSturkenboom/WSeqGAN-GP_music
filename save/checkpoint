@@ -1,0 +1,2 @@
+model_checkpoint_path: "pretrain_g100_d100_vanilla.ckpt"
+all_model_checkpoint_paths: "pretrain_g100_d100_vanilla.ckpt"

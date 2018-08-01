@@ -1,0 +1,212 @@
+{'epochs_discriminator_multiplier': 3, 'START_TOKEN': 0, 'PRE_DIS_EPOCH': 100, 'vocab_size': 3216, 'generated_num': 1400, 'dis_filter_sizes': [20, 20, 20, 20, 20], 'pretrain': True, 'SEED': 88, 'dis_num_filters': [400, 400, 400, 400, 400], 'infinite_loop': True, 'reward_gamma': 0.99, 'TOTAL_BATCH': 2000, 'dis_l2_reg_lambda': 0.2, 'x10adv_g': True, 'discriminator_lr': 0.0001, 'BATCH_SIZE': 32, 'EMB_DIM': 32, 'ROLLOUT_UPDATE_RATE': 0.9, 'PRE_GEN_EPOCH': 100, 'positive_file': 'dataset/train', 'rollout_num': 32, 'valid_file': 'dataset/valid', 'epochs_generator': 1, 'negative_file': 'dataset/generated', 'SEQ_LENGTH': 100, 'dis_embedding_dim': 32, 'GPU': '0', 'dis_dropout_keep_prob': 0.75, 'epochs_discriminator': 1, 'dis_batch_size': 32, 'generator_lr': 0.001, 'loop_threshold': 0.5, 'HIDDEN_DIM': 512}
+D loss: original
+pre-training...
+pre-train epoch: 0 pretrain_loss: 5.6498647 bleu: 0.22122576778465022
+pre-train epoch: 1 pretrain_loss: 5.0103617 bleu: 0.21026760940815162
+pre-train epoch: 2 pretrain_loss: 4.804672 bleu: 0.2569213725549588
+pre-train epoch: 3 pretrain_loss: 4.501317 bleu: 0.2301289378381295
+pre-train epoch: 4 pretrain_loss: 4.28985 bleu: 0.3329787923909205
+pre-train epoch: 5 pretrain_loss: 4.216402 bleu: 0.2852983482008872
+pre-train epoch: 6 pretrain_loss: 4.044558 bleu: 0.36294137725209874
+pre-train epoch: 7 pretrain_loss: 3.9004314 bleu: 0.3502403459469794
+pre-train epoch: 8 pretrain_loss: 3.7701647 bleu: 0.3932663511591253
+pre-train epoch: 9 pretrain_loss: 3.6419153 bleu: 0.3773917177697256
+pre-train epoch: 10 pretrain_loss: 3.5447793 bleu: 0.3529914390300186
+pre-train epoch: 11 pretrain_loss: 3.4181 bleu: 0.3884908253811076
+pre-train epoch: 12 pretrain_loss: 3.3070447 bleu: 0.41029221801398397
+pre-train epoch: 13 pretrain_loss: 3.185764 bleu: 0.41994559826114736
+pre-train epoch: 14 pretrain_loss: 3.0829256 bleu: 0.37854686734283916
+pre-train epoch: 15 pretrain_loss: 2.961972 bleu: 0.42882962922398893
+pre-train epoch: 16 pretrain_loss: 2.8562443 bleu: 0.38952751879770725
+pre-train epoch: 17 pretrain_loss: 2.7477803 bleu: 0.4096506428990129
+pre-train epoch: 18 pretrain_loss: 2.6468334 bleu: 0.37923922046872116
+pre-train epoch: 19 pretrain_loss: 2.5519266 bleu: 0.36169315336131624
+pre-train epoch: 20 pretrain_loss: 2.4603004 bleu: 0.4118333617327711
+pre-train epoch: 21 pretrain_loss: 2.3638654 bleu: 0.41636644386777355
+pre-train epoch: 22 pretrain_loss: 2.276382 bleu: 0.43465144833321634
+pre-train epoch: 23 pretrain_loss: 2.1996512 bleu: 0.43171602074674753
+pre-train epoch: 24 pretrain_loss: 2.1122646 bleu: 0.44484171752072355
+pre-train epoch: 25 pretrain_loss: 2.0333805 bleu: 0.4236005009099735
+pre-train epoch: 26 pretrain_loss: 1.9560775 bleu: 0.4287069720802742
+pre-train epoch: 27 pretrain_loss: 1.8861749 bleu: 0.4577964540483834
+pre-train epoch: 28 pretrain_loss: 1.8115685 bleu: 0.4463191145876452
+pre-train epoch: 29 pretrain_loss: 1.7465405 bleu: 0.3888278767587553
+pre-train epoch: 30 pretrain_loss: 1.6881515 bleu: 0.46995592121870916
+pre-train epoch: 31 pretrain_loss: 1.6219915 bleu: 0.4184743902948004
+pre-train epoch: 32 pretrain_loss: 1.5576274 bleu: 0.4587056999328542
+pre-train epoch: 33 pretrain_loss: 1.5001214 bleu: 0.42702567841228756
+pre-train epoch: 34 pretrain_loss: 1.4390002 bleu: 0.4413648697870164
+pre-train epoch: 35 pretrain_loss: 1.3828906 bleu: 0.48972521671086755
+pre-train epoch: 36 pretrain_loss: 1.3255299 bleu: 0.4713776543384909
+pre-train epoch: 37 pretrain_loss: 1.2731156 bleu: 0.42796604611828676
+pre-train epoch: 38 pretrain_loss: 1.2243474 bleu: 0.44779644046591544
+pre-train epoch: 39 pretrain_loss: 1.1780235 bleu: 0.4794863241749214
+pre-train epoch: 40 pretrain_loss: 1.1329532 bleu: 0.43918978245809626
+pre-train epoch: 41 pretrain_loss: 1.0897553 bleu: 0.5033869655417366
+pre-train epoch: 42 pretrain_loss: 1.0492876 bleu: 0.4564872752349912
+pre-train epoch: 43 pretrain_loss: 1.0046799 bleu: 0.48546858939255005
+pre-train epoch: 44 pretrain_loss: 0.95982707 bleu: 0.49075156039201967
+pre-train epoch: 45 pretrain_loss: 0.92507535 bleu: 0.4651173966247109
+pre-train epoch: 46 pretrain_loss: 0.887492 bleu: 0.49235316098439236
+pre-train epoch: 47 pretrain_loss: 0.8568718 bleu: 0.47871273396230957
+pre-train epoch: 48 pretrain_loss: 0.81945425 bleu: 0.4769942977552327
+pre-train epoch: 49 pretrain_loss: 0.79301447 bleu: 0.520257051023434
+pre-train epoch: 50 pretrain_loss: 0.7636666 bleu: 0.49336162077904433
+pre-train epoch: 51 pretrain_loss: 0.7329307 bleu: 0.4875523050998035
+pre-train epoch: 52 pretrain_loss: 0.704046 bleu: 0.48273533384047074
+pre-train epoch: 53 pretrain_loss: 0.68354094 bleu: 0.487131308358817
+pre-train epoch: 54 pretrain_loss: 0.66146743 bleu: 0.4684587150512055
+pre-train epoch: 55 pretrain_loss: 0.6471636 bleu: 0.5133270612154119
+pre-train epoch: 56 pretrain_loss: 0.617883 bleu: 0.4753341369833567
+pre-train epoch: 57 pretrain_loss: 0.5870643 bleu: 0.4809768132293707
+pre-train epoch: 58 pretrain_loss: 0.56530863 bleu: 0.514774082812894
+pre-train epoch: 59 pretrain_loss: 0.5435085 bleu: 0.49027572569452904
+pre-train epoch: 60 pretrain_loss: 0.52631545 bleu: 0.5066888000912642
+pre-train epoch: 61 pretrain_loss: 0.5067232 bleu: 0.4916046690477863
+pre-train epoch: 62 pretrain_loss: 0.49078557 bleu: 0.48885974375150953
+pre-train epoch: 63 pretrain_loss: 0.4799011 bleu: 0.49492053488372123
+pre-train epoch: 64 pretrain_loss: 0.45915478 bleu: 0.5213555256733997
+pre-train epoch: 65 pretrain_loss: 0.4462911 bleu: 0.5145424205273926
+pre-train epoch: 66 pretrain_loss: 0.42976508 bleu: 0.5145564476930982
+pre-train epoch: 67 pretrain_loss: 0.41260564 bleu: 0.5057137808174503
+pre-train epoch: 68 pretrain_loss: 0.40472665 bleu: 0.5147682563537102
+pre-train epoch: 69 pretrain_loss: 0.3898864 bleu: 0.49121736376583547
+pre-train epoch: 70 pretrain_loss: 0.37164006 bleu: 0.4766282829163286
+pre-train epoch: 71 pretrain_loss: 0.35642567 bleu: 0.5212534750939092
+pre-train epoch: 72 pretrain_loss: 0.34538049 bleu: 0.5392919171939903
+pre-train epoch: 73 pretrain_loss: 0.33802024 bleu: 0.5410976818766384
+pre-train epoch: 74 pretrain_loss: 0.33125734 bleu: 0.49978739433548
+pre-train epoch: 75 pretrain_loss: 0.32315668 bleu: 0.5116590746955485
+pre-train epoch: 76 pretrain_loss: 0.3140452 bleu: 0.5128948711458176
+pre-train epoch: 77 pretrain_loss: 0.3062805 bleu: 0.5247315871459735
+pre-train epoch: 78 pretrain_loss: 0.29810104 bleu: 0.5003185006370504
+pre-train epoch: 79 pretrain_loss: 0.28454393 bleu: 0.500741198027174
+pre-train epoch: 80 pretrain_loss: 0.2734685 bleu: 0.5421129922360289
+pre-train epoch: 81 pretrain_loss: 0.2667351 bleu: 0.5294407922569897
+pre-train epoch: 82 pretrain_loss: 0.2583172 bleu: 0.5474320479965151
+pre-train epoch: 83 pretrain_loss: 0.2558215 bleu: 0.5215636455021784
+pre-train epoch: 84 pretrain_loss: 0.25035957 bleu: 0.5010020996601657
+pre-train epoch: 85 pretrain_loss: 0.25140145 bleu: 0.5219127975865827
+pre-train epoch: 86 pretrain_loss: 0.24803911 bleu: 0.5295173593184155
+pre-train epoch: 87 pretrain_loss: 0.23896812 bleu: 0.5174689639952954
+pre-train epoch: 88 pretrain_loss: 0.22963414 bleu: 0.5500323569676827
+pre-train epoch: 89 pretrain_loss: 0.22145376 bleu: 0.5175919527309463
+pre-train epoch: 90 pretrain_loss: 0.21184082 bleu: 0.5227132605277787
+pre-train epoch: 91 pretrain_loss: 0.2049902 bleu: 0.5124239931458978
+pre-train epoch: 92 pretrain_loss: 0.1988613 bleu: 0.5305279837051989
+pre-train epoch: 93 pretrain_loss: 0.1942904 bleu: 0.522782154540457
+pre-train epoch: 94 pretrain_loss: 0.18938522 bleu: 0.5198465549620286
+pre-train epoch: 95 pretrain_loss: 0.1895515 bleu: 0.543916059913655
+pre-train epoch: 96 pretrain_loss: 0.19014096 bleu: 0.5153852950720499
+pre-train epoch: 97 pretrain_loss: 0.18922855 bleu: 0.5214457168099965
+pre-train epoch: 98 pretrain_loss: 0.18606898 bleu: 0.5328010037077989
+pre-train epoch: 99 pretrain_loss: 0.18235923 bleu: 0.5075052124473879
+epoch: 1  D loss: 6.7043681089268174
+epoch: 2  D loss: 5.301832577978918
+epoch: 3  D loss: 4.715086922165035
+epoch: 4  D loss: 4.159790199856426
+epoch: 5  D loss: 3.8787994532622108
+epoch: 6  D loss: 3.4995979948561318
+epoch: 7  D loss: 3.072413691254549
+epoch: 8  D loss: 2.7577926290127657
+epoch: 9  D loss: 2.5384410439535627
+epoch: 10  D loss: 2.289842193902925
+epoch: 11  D loss: 2.096191766188126
+epoch: 12  D loss: 1.9408733188643936
+epoch: 13  D loss: 1.8078974919725759
+epoch: 14  D loss: 1.6798148303068885
+epoch: 15  D loss: 1.5746903779894807
+epoch: 16  D loss: 1.4684555872466214
+epoch: 17  D loss: 1.402866734552753
+epoch: 18  D loss: 1.2858608268028082
+epoch: 19  D loss: 1.1988605154577152
+epoch: 20  D loss: 1.1386938825134159
+epoch: 21  D loss: 1.0579008497008981
+epoch: 22  D loss: 0.9670592225337212
+epoch: 23  D loss: 0.894976764455322
+epoch: 24  D loss: 0.8217172521029332
+epoch: 25  D loss: 0.7688889521961064
+epoch: 26  D loss: 0.6869726675425389
+epoch: 27  D loss: 0.622054867504179
+epoch: 28  D loss: 0.5758650036052216
+epoch: 29  D loss: 0.5106346246808074
+epoch: 30  D loss: 0.484753705156866
+epoch: 31  D loss: 0.4137784910294437
+epoch: 32  D loss: 0.38080563621465546
+epoch: 33  D loss: 0.3462961517101111
+epoch: 34  D loss: 0.29899520525174544
+epoch: 35  D loss: 0.26285574400378753
+epoch: 36  D loss: 0.24972379744745965
+epoch: 37  D loss: 0.2202255921654923
+epoch: 38  D loss: 0.18691943701385527
+epoch: 39  D loss: 0.17004747971776846
+epoch: 40  D loss: 0.17029863194555275
+epoch: 41  D loss: 0.1348325176987537
+epoch: 42  D loss: 0.129791440774304
+epoch: 43  D loss: 0.11217931253734485
+epoch: 44  D loss: 0.10251563790348149
+epoch: 45  D loss: 0.09949841520698495
+epoch: 46  D loss: 0.08636833727359772
+epoch: 47  D loss: 0.07563956346102925
+epoch: 48  D loss: 0.08334171501991823
+epoch: 49  D loss: 0.06567446250728397
+epoch: 50  D loss: 0.07145279092901899
+epoch: 51  D loss: 0.06259962676684987
+epoch: 52  D loss: 0.055187898608603216
+epoch: 53  D loss: 0.054604313581777635
+epoch: 54  D loss: 0.051119067836119685
+epoch: 55  D loss: 0.04562064821203781
+epoch: 56  D loss: 0.038337231137205004
+epoch: 57  D loss: 0.03861253263876419
+epoch: 58  D loss: 0.047568786867655984
+epoch: 59  D loss: 0.0434300826804698
+epoch: 60  D loss: 0.050855431579371065
+epoch: 61  D loss: 0.03676021851368191
+epoch: 62  D loss: 0.040649352151207456
+epoch: 63  D loss: 0.041733293241799564
+epoch: 64  D loss: 0.04537642524079528
+epoch: 65  D loss: 0.0330901673287442
+epoch: 66  D loss: 0.027843083171968083
+epoch: 67  D loss: 0.041656836928698676
+epoch: 68  D loss: 0.03144487840044059
+epoch: 69  D loss: 0.03222289844596571
+epoch: 70  D loss: 0.03753294825712724
+epoch: 71  D loss: 0.034471639052986405
+epoch: 72  D loss: 0.0326041472938576
+epoch: 73  D loss: 0.0362706410287078
+epoch: 74  D loss: 0.0363844959570687
+epoch: 75  D loss: 0.02820221726537155
+epoch: 76  D loss: 0.030338598716671963
+epoch: 77  D loss: 0.029622119734092622
+epoch: 78  D loss: 0.04490690243740877
+epoch: 79  D loss: 0.03021290173479753
+epoch: 80  D loss: 0.036135070829096345
+epoch: 81  D loss: 0.021346426884780903
+epoch: 82  D loss: 0.02549514440140983
+epoch: 83  D loss: 0.0369815187341021
+epoch: 84  D loss: 0.02454105278931905
+epoch: 85  D loss: 0.02782562889100969
+epoch: 86  D loss: 0.036850059464530543
+epoch: 87  D loss: 0.02735515541303181
+epoch: 88  D loss: 0.03565289467472092
+epoch: 89  D loss: 0.020129884981239837
+epoch: 90  D loss: 0.02077997905426016
+epoch: 91  D loss: 0.026079724844213028
+epoch: 92  D loss: 0.031813116912015306
+epoch: 93  D loss: 0.0259360966810509
+epoch: 94  D loss: 0.025292984838056008
+epoch: 95  D loss: 0.029590339405288876
+epoch: 96  D loss: 0.024126537277745875
+epoch: 97  D loss: 0.03209340673430946
+epoch: 98  D loss: 0.028309609829412066
+epoch: 99  D loss: 0.028546701788238083
+epoch: 100  D loss: 0.023709052971513697
+adversarial training...
+epoch: 1,  G_adv_loss: 40.624870300293,  D loss: 0.787937879718,  bleu score: 0.566973414443
+epoch: 2,  G_adv_loss: 7.837456226349,  D loss: 0.680657919962,  bleu score: 0.571525337669
+epoch: 3,  G_adv_loss: 11.145738601685,  D loss: 0.636440575433,  bleu score: 0.552526362059
+epoch: 4,  G_adv_loss: 3.243064403534,  D loss: 0.410369373315,  bleu score: 0.523435556053
+epoch: 5,  G_adv_loss: 4.191059112549,  D loss: 0.361984163988,  bleu score: 0.487897052029
+Mode collapse detected, restarting from pretrained model...
+epoch: 6,  G_adv_loss: 9.284309387207,  D loss: 2.431803213432,  bleu score: 0.532227712839
+epoch: 7,  G_adv_loss: 39.919479370117,  D loss: 1.606244503520,  bleu score: 0.521757296156

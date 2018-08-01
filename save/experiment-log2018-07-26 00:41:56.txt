@@ -1,0 +1,4 @@
+{'epochs_discriminator_multiplier': 3, 'START_TOKEN': 0, 'PRE_DIS_EPOCH': 100, 'vocab_size': 3216, 'generated_num': 1400, 'dis_filter_sizes': [20, 20, 20, 20, 20], 'pretrain': True, 'SEED': 88, 'dis_num_filters': [400, 400, 400, 400, 400], 'infinite_loop': True, 'reward_gamma': 0.99, 'TOTAL_BATCH': 2000, 'dis_l2_reg_lambda': 0.2, 'x10adv_g': True, 'discriminator_lr': 0.0001, 'BATCH_SIZE': 32, 'EMB_DIM': 32, 'ROLLOUT_UPDATE_RATE': 0.9, 'PRE_GEN_EPOCH': 100, 'positive_file': 'dataset/train', 'rollout_num': 32, 'valid_file': 'dataset/valid', 'epochs_generator': 1, 'negative_file': 'dataset/generated', 'SEQ_LENGTH': 100, 'dis_embedding_dim': 32, 'GPU': '0', 'dis_dropout_keep_prob': 0.75, 'epochs_discriminator': 1, 'dis_batch_size': 32, 'generator_lr': 0.001, 'loop_threshold': 0.5, 'HIDDEN_DIM': 512}
+D loss: original
+pre-training...
+pre-train epoch: 0 pretrain_loss: 5.541197 bleu: 0.221184038459577
